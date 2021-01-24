@@ -10,14 +10,15 @@ class Library {
 
   addBook(newBook){
     this.books.push(newBook);}
-  // addBooks(newBooks){
-  //   newBooks.forEach(book => this.books.push(book));
-  // }
-  addBooks(newBooks) {
-    this.books = [...this.books, ...newBooks];
-  }
 
-  // printInventory(){
+  addBooks(newBooks){
+    newBooks.forEach(book => this.books.push(book));
+  }
+  // addBooks(newBooks) {
+  //   this.books = [...this.books, ...newBooks];
+  // }
+
+  // printInventory_original(){
   //   this.books.forEach((book) => {
   //     console.log(`${book.title} by ${book.author}`);
   //   });
